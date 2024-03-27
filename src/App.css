@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
@@ -35,4 +35,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Ajusta la altura al 100% del viewport */
+}
+
+.button {
+  background-color: transparent; /* Fondo transparente */
+  color: rgb(255, 255, 255); /* Color de texto azul */
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid rgb(255, 255, 255); /* Borde azul */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+.button:hover {
+  transform: scale(1.1); 
 }
